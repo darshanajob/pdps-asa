@@ -7,17 +7,19 @@ import { Link } from "react-router-dom";
 
 // Redux Store
 import { showRightSidebarAction, toggleLeftmenu } from "../../store/actions";
+// reactstrap
+import { Row, Col, Dropdown, DropdownToggle, DropdownMenu } from "reactstrap";
 
 // Import menuDropdown
 import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown";
-import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown";
-import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu";
 
-import megamenuImg from "../../assets/images/megamenu-img.png";
-import logo from "../../assets/images/logo.svg";
+
+import logo from "../../assets/images/Banner.png";
 import logoLight from "../../assets/images/logo-light.png";
 import logoLightSvg from "../../assets/images/logo-light.svg";
 import logoDark from "../../assets/images/logo-dark.png";
+
+
 
 //i18n
 import { withTranslation } from "react-i18next";
@@ -59,27 +61,37 @@ const Header = props => {
         <div className="navbar-header">
           <div className="d-flex">
             <div className="navbar-brand-box">
-              <Link to="/" className="logo logo-dark">
-                <span className="logo-sm">
-                  <img src={logo} alt="" height="120" />
-                </span>
-                <span className="logo-lg">
-                  <img src={logoDark} alt="" height="80" />
-                </span>
-              </Link>
+              
 
               <Link to="/" className="logo logo-light">
-                <span className="logo-sm">
-                  <img src={logoLightSvg} alt="" height="22" />
+                <span className="logo-sm">                  
+                <img src={logo} alt="" height="45" />           
                 </span>
+               
                 <span className="logo-lg">
-                  <img src={logoLight} alt="" height="19" />
+                <img src={logo} alt="" height="82" />            
                 </span>
+                
               </Link>
             </div>
+
+            <button
+              type="button"
+              className="btn btn-sm px-3 font-size-16 d-lg-none header-item"
+              data-toggle="collapse"
+              onClick={() => {
+                props.toggleLeftmenu(!props.leftMenu);
+              }}
+              data-target="#topnav-menu-content"
+            >
+              <i className="fa fa-fw fa-bars" />
+            </button>
           </div>
+
           <div className="d-flex">
+            
             <LanguageDropdown />
+            
           </div>
         </div>
       </header>

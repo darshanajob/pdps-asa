@@ -1,6 +1,7 @@
 import React from "react"
 import { Redirect } from "react-router-dom"
 
+
 // Pages Component
 import Chat from "../pages/Chat/Chat"
 
@@ -35,6 +36,8 @@ import EcommerceAddProduct from "../pages/Ecommerce/EcommerceAddProduct"
 
 //Email
 import EmailInbox from "../pages/Email/email-inbox"
+
+
 import EmailRead from "../pages/Email/email-read"
 import EmailBasicTemplte from "../pages/Email/email-basic-templte"
 import EmailAlertTemplte from "../pages/Email/email-template-alert"
@@ -69,7 +72,7 @@ import TwostepVerification from "../pages/AuthenticationInner/auth-two-step-veri
 import TwostepVerification2 from "../pages/AuthenticationInner/auth-two-step-verification-2"
 
 // Dashboard
-import Dashboard from "../pages/Dashboard/index"
+import Home from "../pages/Dashboard/index"
 import DashboardSaas from "../pages/Dashboard-saas/index"
 import DashboardCrypto from "../pages/Dashboard-crypto/index"
 import Blog from "../pages/Dashboard-Blog/index"
@@ -177,8 +180,39 @@ import ContactsGrid from "../pages/Contacts/contacts-grid"
 import ContactsList from "../pages/Contacts/ContactList/contacts-list"
 import ContactsProfile from "../pages/Contacts/ContactsProfile/contacts-profile"
 
-const authProtectedRoutes = [
-  { path: "/dashboard", component: Dashboard },
+
+import Gallery from "pages/Gallery/Gallery"
+import TenderCalling from "pages/Tender/TenderCalling"
+import SupplierRegister from "pages/Tender/SupplierRegister"
+import Bidding from "pages/Tender/Bidding"
+import Complain from "pages/Complain"
+import Application from "pages/Download/Application"
+import Gazette from "pages/Download/Gazette"
+import Service from "pages/Services/service"
+import ViewMember from "pages/Members/ViewMember"
+import ViewOfficer from "pages/Officers/ViewOfficer"
+
+
+const authProtectedRoutes  = [
+  { path: "/home", component: Home },
+
+  { path: "/officer", component: ViewOfficer },
+  { path: "/member", component: ViewMember },
+
+  { path: "/services", component: Service },
+
+  { path: "/download-application", component: Application },
+  { path: "/download-gazette", component: Gazette },
+
+  { path: "/complain", component: Complain },
+  
+  { path: "/tender-calling", component: TenderCalling},
+  { path: "/supplier-register", component: SupplierRegister},
+  { path: "/tender-bidding", component: Bidding},
+
+  { path: "/gallery", component: Gallery },
+
+
   { path: "/dashboard-saas", component: DashboardSaas },
   { path: "/dashboard-crypto", component: DashboardCrypto },
   { path: "/blog", component: Blog },
@@ -216,6 +250,9 @@ const authProtectedRoutes = [
 
   //Email
   { path: "/email-inbox", component: EmailInbox },
+
+
+
   { path: "/email-read", component: EmailRead },
   { path: "/email-template-basic", component: EmailBasicTemplte },
   { path: "/email-template-alert", component: EmailAlertTemplte },
@@ -327,10 +364,11 @@ const authProtectedRoutes = [
 
   // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
-  { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
+  { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
 
 const publicRoutes = [
+
   { path: "/logout", component: Logout },
   { path: "/login", component: Login },
   { path: "/forgot-password", component: ForgetPwd },

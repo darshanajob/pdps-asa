@@ -40,9 +40,9 @@ const LanguageDropdown = () => {
           <img
             src={get(languages, `${selectedLang}.flag`)}
             alt="Skote"
-            height="16"
+            height="28"
             className="me-1"
-          />
+          /> <div className="arrow-down"></div>
         </DropdownToggle>
         <DropdownMenu className="language-switch dropdown-menu-end">
           {map(Object.keys(languages), key => (
@@ -56,7 +56,7 @@ const LanguageDropdown = () => {
                 src={get(languages, `${key}.flag`)}
                 alt="Skote"
                 className="me-1"
-                height="12"
+                height="18"
               />
               <span className="align-middle">
                 {get(languages, `${key}.label`)}

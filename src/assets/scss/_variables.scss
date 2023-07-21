@@ -25,7 +25,7 @@ $sidebar-dark-menu-item-hover-color: #ffffff;
 $sidebar-dark-menu-item-active-color: #ffffff;
 
 // Topbar - Deafult Light
-$header-height: 70px;
+$header-height: 100px;
 $header-bg:                                           var(--#{$prefix}heading-bg);
 $header-item-color:                                   var(--#{$prefix}header-item-color);
 
@@ -1138,7 +1138,7 @@ $zindex-toast:                      1090;
 $nav-link-padding-y:                .5rem;
 $nav-link-padding-x:                1rem;
 $nav-link-font-size:                null;
-$nav-link-font-weight:              null;
+$nav-link-font-weight:              bolder;
 $nav-link-color:                    null;
 $nav-link-hover-color:              null;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
