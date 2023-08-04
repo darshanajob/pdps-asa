@@ -50,6 +50,7 @@ import Service from "pages/Services/service"
 import WaterBowser from "pages/Services/WaterBowser"
 import WaterSupply from "pages/Services/WaterSupply"
 import WaterSupplyApplication from "pages/Services/WaterSupplyApplication"
+import TeacherManagement from "../pages/Services/TeacherManagement";
 
 const authProtectedRoutes  = [
   { path: "/logout", component: Logout },
@@ -102,6 +103,9 @@ const publicRoutes = [
   { path: "/tender-calling", component: TenderCalling},
   { path: "/supplier-register", component: SupplierRegister},
   { path: "/tender-bidding", component: Bidding},
+  { path: "/tender-biddingssss", component: Service},
+  { path: "/tender-biddingsssssss", component: TeacherManagement},
+  
 
   { path: "/gallery", component: Gallery },
 

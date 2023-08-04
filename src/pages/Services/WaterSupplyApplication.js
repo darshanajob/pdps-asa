@@ -184,6 +184,7 @@ const WaterSupplyApplication = props => {
 
                   <Form
                     onSubmit={e => {
+                      console.log(e.target)
                       e.preventDefault()
                       validationType.handleSubmit()
                       return false

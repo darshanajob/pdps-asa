@@ -338,6 +338,7 @@ function EcommerceOrder() {
             <ModalBody>
               <Form
                 onSubmit={(e) => {
+                  console.log('ee',e.target.value)
                   e.preventDefault();
                   validation.handleSubmit();
                   return false;
