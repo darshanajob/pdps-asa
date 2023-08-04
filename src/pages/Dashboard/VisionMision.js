@@ -14,7 +14,7 @@ const VisionMision = props => {
             <div className="bg-primary bg-soft">
               <Row>
                 <Col xs="12">
-                  <div className="text-primary p-3">
+                  <div className="text-primary p-3 messages-center">
                     <h5 className="text-primary">{props.t("Vision")}</h5>
                   </div>
                 </Col>
@@ -27,8 +27,8 @@ const VisionMision = props => {
                     <Row>
                       <Col xs="12">
 
-                        <p className="text-muted mb-0">
-                        {props.t("Local governance from village to village door to door")}
+                        <p className="messages-center">
+                        {props.t("VisionText")}
                         </p>
                       </Col>
 
@@ -44,7 +44,7 @@ const VisionMision = props => {
             <div className="bg-primary bg-soft">
               <Row>
                 <Col xs="12">
-                  <div className="text-primary p-3">
+                  <div className="text-primary p-3 messages-center">
                     <h5 className="text-primary">{props.t("Mission")}</h5>
                   </div>
                 </Col>
@@ -57,8 +57,8 @@ const VisionMision = props => {
                     <Row>
                       <Col xs="12">
 
-                        <p className="text-muted mb-0">
-                        {props.t("Putting forward the basic objective of preserving the identity and beauty of the Dumbara valley and making the best use of the limited resources available in the area to fulfill the wishes of the general public, putting forward the objective of securing the future of the people and making a collective effort")}
+                        <p className="messages-center">
+                        {props.t("MissionText")}
                         </p>
                       </Col>
 

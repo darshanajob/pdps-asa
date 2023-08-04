@@ -24,7 +24,7 @@ import Breadcrumbs from "../../components/Common/Breadcrumb";
 //i18n
 import { withTranslation } from "react-i18next"
 
-const MemberView = props => {
+const Service = props => {
 
   //meta title
   document.title = "PDPS";
@@ -35,7 +35,7 @@ const MemberView = props => {
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title={props.t("Members")} breadcrumbItem={props.t("Main Page")} />
+          <Breadcrumbs title={props.t("Services")} breadcrumbItem={props.t("Water Bowser")} />
 
           <Row>
             <Col xs="12">
@@ -49,6 +49,6 @@ const MemberView = props => {
   );
 };
 
-export default withTranslation()(MemberView);
+export default withTranslation()(Service);
 
 

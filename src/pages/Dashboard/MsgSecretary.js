@@ -41,12 +41,8 @@ const MsgSecretary = props => {
                     <Row>
                       <Col xs="12">
 
-                        <p className="text-muted mb-0">
-                          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut              libero venenatis faucibus tincidunt.
-                          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut              libero venenatis faucibus tincidunt.
-                          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut              libero venenatis faucibus tincidunt.
-                          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut              libero venenatis faucibus tincidunt.
-                          Maecenas nec odio et ante tincidunt tempus. 
+                        <p className="text-muted mb-0 messages-justify">
+                        {props.t("SecretaryMsgText")}
                         </p>
                       </Col>
 

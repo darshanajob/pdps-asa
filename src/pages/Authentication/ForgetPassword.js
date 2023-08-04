@@ -21,7 +21,7 @@ import logo from "../../assets/images/logo.svg";
 const ForgetPasswordPage = props => {
 
   //meta title
-  document.title="Forget Password | Skote - React Admin & Dashboard Template";
+  document.title="PDPS";
 
   const dispatch = useDispatch();
 
@@ -57,16 +57,12 @@ const ForgetPasswordPage = props => {
           <Row className="justify-content-center">
             <Col md={8} lg={6} xl={5}>
               <Card className="overflow-hidden">
-                <div className="bg-primary bg-softbg-soft-primary">
+                <div className="bg-primary bg-soft">
                   <Row>
-                    <Col xs={7}>
+                    <Col className="col-7">
                       <div className="text-primary p-4">
-                        <h5 className="text-primary">Welcome Back !</h5>
-                        <p>Sign in to continue to Skote.</p>
+                        <h4 className="text-primary">Password Reset</h4>
                       </div>
-                    </Col>
-                    <Col className="col-5 align-self-end">
-                      <img src={profile} alt="" className="img-fluid" />
                     </Col>
                   </Row>
                 </div>
@@ -78,7 +74,7 @@ const ForgetPasswordPage = props => {
                           <img
                             src={logo}
                             alt=""
-                            className="rounded-circle"
+                            className="img-thumbnail rounded-circle"
                             height="34"
                           />
                         </span>
@@ -145,8 +141,7 @@ const ForgetPasswordPage = props => {
                   </Link>{" "}
                 </p>
                 <p>
-                  © {new Date().getFullYear()} Skote. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
+                  © {new Date().getFullYear()} PDPS
                 </p>
               </div>
             </Col>

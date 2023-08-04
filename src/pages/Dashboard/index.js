@@ -61,7 +61,7 @@ const Dashboard = props => {
             <Col xl="12">
               <Card body>
                 <CardTitle className="mt-0">{props.t("Latest News")} </CardTitle>
-                <Marquee delay={4} direction="right">{props.t("The tenure of all local councils and municipal councils will end from today")} </Marquee>
+                <Marquee delay={4} direction="right">{props.t("LatestNewsSample")} </Marquee>
               </Card>
             </Col>
           </Row>

@@ -14,7 +14,7 @@ const resources = {
   ta: {
     translation: translationIT,
   },
-  eng: {
+  en: {
     translation: translationENG,
   },
 }

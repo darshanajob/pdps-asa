@@ -20,7 +20,7 @@ import logoImg from "../../assets/images/logo.svg";
 const Register = props => {
 
   //meta title
-  document.title = "Register | Skote - React Admin & Dashboard Template";
+  document.title = "PDPS";
 
   const dispatch = useDispatch();
 
@@ -70,12 +70,8 @@ const Register = props => {
                   <Row>
                     <Col className="col-7">
                       <div className="text-primary p-4">
-                        <h5 className="text-primary">Free Register</h5>
-                        <p>Get your free Skote account now.</p>
+                        <h4 className="text-primary"> Register</h4>
                       </div>
-                    </Col>
-                    <Col className="col-5 align-self-end">
-                      <img src={profileImg} alt="" className="img-fluid" />
                     </Col>
                   </Row>
                 </div>
@@ -87,7 +83,7 @@ const Register = props => {
                           <img
                             src={logoImg}
                             alt=""
-                            className="rounded-circle"
+                            className="img-thumbnail rounded-circle"
                             height="34"
                           />
                         </span>
@@ -176,15 +172,6 @@ const Register = props => {
                           Register
                         </button>
                       </div>
-
-                      <div className="mt-4 text-center">
-                        <p className="mb-0">
-                          By registering you agree to the Skote{" "}
-                          <Link to="#" className="text-primary">
-                            Terms of Use
-                          </Link>
-                        </p>
-                      </div>
                     </Form>
                   </div>
                 </CardBody>
@@ -198,8 +185,7 @@ const Register = props => {
                   </Link>{" "}
                 </p>
                 <p>
-                  © {new Date().getFullYear()} Skote. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
+                  © {new Date().getFullYear()} PDPS
                 </p>
               </div>
             </Col>

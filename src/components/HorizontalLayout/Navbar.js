@@ -114,9 +114,17 @@ const Navbar = props => {
                     {props.t("About Us")} <div className="arrow-down"></div>
                   </Link>
                   <div className={classname("dropdown-menu", { show: app })}>
+                  <div className="dropdown">
+                      <Link
+                        to="/citizen-charter"
+                        className="dropdown-item dropdown-toggle arrow-none"                    
+                      >
+                        {props.t("Citizen Charter")} 
+                      </Link>                     
+                    </div>
                     <div className="dropdown">
                       <Link
-                        to="/member"
+                        to="/view-members"
                         className="dropdown-item dropdown-toggle arrow-none"                    
                       >
                         {props.t("Members")} 
@@ -124,7 +132,7 @@ const Navbar = props => {
                     </div>
                     <div className="dropdown">
                       <Link
-                        to="/officer"
+                        to="/view-officers"
                         className="dropdown-item dropdown-toggle arrow-none"                       
                       >
                         {props.t("Officers")} 
@@ -160,10 +168,10 @@ const Navbar = props => {
                       <div
                         className={classname("dropdown-menu", { show: email })}
                       >
-                        <Link to="/services" className="dropdown-item">
+                        <Link to="/water-bowser" className="dropdown-item">
                           {props.t("Water Bowser")}
                         </Link>
-                        <Link to="/services" className="dropdown-item">
+                        <Link to="/water-supply" className="dropdown-item">
                           {props.t("Water Supply")}
                         </Link>
                         <Link to="/services" className="dropdown-item">
@@ -296,7 +304,15 @@ const Navbar = props => {
                         to="/download-gazette"
                         className="dropdown-item dropdown-toggle arrow-none"                       
                       >
-                        {props.t("Gazette")} 
+                        {props.t("Acts")} 
+                      </Link>                     
+                    </div> 
+                    <div className="dropdown">
+                      <Link
+                        to="/download-gazette"
+                        className="dropdown-item dropdown-toggle arrow-none"                       
+                      >
+                        {props.t("Commitee Reports")} 
                       </Link>                     
                     </div>                    
                   </div>
@@ -362,6 +378,15 @@ const Navbar = props => {
                   </Link>
                 </li>
           
+                <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle arrow-none" 
+                    to="/login" target="_bank"
+                  >
+                    <i className="bx bx-log-in me-2"></i>
+                    {props.t("Login")}               
+                  </Link>
+                </li>
               </ul>
             </Collapse>
           </nav>

@@ -35,7 +35,7 @@ const OfficerView = props => {
       <div className="page-content">
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title={props.t("Officers")} breadcrumbItem={props.t("Main Page")} />
+          <Breadcrumbs title={props.t("About Us")} breadcrumbItem={props.t("Officers")} />
 
           <Row>
             <Col xs="12">
